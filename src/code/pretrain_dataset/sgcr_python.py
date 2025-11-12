@@ -104,6 +104,7 @@ def main(args: argparse.Namespace) -> None:
         dtype="bfloat16",
         gpu_memory_utilization=0.9,
         max_model_len=102688,
+        enable_prefix_caching=True,
     )
 
     # Load and process the JSONL file
