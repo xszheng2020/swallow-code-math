@@ -138,7 +138,7 @@ def main(args: argparse.Namespace) -> None:
         start = time.perf_counter()
         texts = []
         for item in batch:
-            code_text: str = item["text"]
+            code_text: str = item["old_text"]
             messages: list[dict[str, str]] = [
                 {"role": "system", "content": instruction},
                 {"role": "user", "content": code_text},
